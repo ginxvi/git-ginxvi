@@ -10,20 +10,12 @@ nala
 neovim
 gh
 lazygit
-lazyvim
-ripgrep
-fd-find
+
+
+RUST
 build-essential
 pkg-config
 libssl-dev
-fastfetch
-clang
-libclang-dev
-llvm
-libopencv-dev
-cmake
-
-RUST
 rustup: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 - cargo
 - bacon

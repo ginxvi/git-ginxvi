@@ -77,4 +77,40 @@ git checkout main
 git merge feature/login
 git push
 
+git branch -d <name>
+git branch
+
+
 NEOVIM 
+i
+v
+V
+control v
+
+h j k l
+w b
+e
+0 $
+gg G
+
+control d | u
+control f | b
+
+V j | k
+ggVG GVgg
+
+yy
+p P
+
+dd dw d$
+d$ = dd space
+
+/<word>
+?<word>
+n N
+
+u | control r
+
+{ }
+
+>> << =
