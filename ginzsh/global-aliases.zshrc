@@ -3,6 +3,7 @@ alias c="clear"
 alias e="exit"
 alias r="rm -rf"
 alias p="pwd"
+alias b='echo && bat'
 
 alias sr="sudo rm -rf"
 alias la="ls -alh"
