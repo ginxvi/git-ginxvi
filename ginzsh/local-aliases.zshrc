@@ -1,0 +1,1 @@
+alias macinfo="system_profiler SPHardwareDataType && echo && df -h && echo && vm_stat"

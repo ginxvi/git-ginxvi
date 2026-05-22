@@ -1,3 +1,4 @@
 clean brew 
 reset brew
 clean package 
+make ginxvi anaconda and chose python version

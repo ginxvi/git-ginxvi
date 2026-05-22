@@ -1,0 +1,83 @@
+# gin signature : gin.w.xvi.e.s
+
+# ZSH
+source "$GINZSH_PATH/zsh.zshrc"
+
+# AUTH
+export GIN_SIGNATURE="gin-w-xvi-e-s"
+echo "This is $GIN_SIGNATURE"
+
+# LOCAL VARS
+export MAIN_PATH="$HOME/GINETSOPHIE"
+export GITGINXVI_PATH="$MAIN_PATH/git-ginxvi"
+export GINZSH_PATH="$GITGINXVI_PATH/ginzsh"
+export CONFIG_PATH="$HOME/.config"
+# LOCAL CDS
+alias main="cd $MAIN_PATH"
+alias gingit="cd $GITGINXVI_PATH"
+alias ginzsh="cd $GINZSH_PATH"
+alias cf="cd $CONFIG_PATH"
+
+# GLOBAL VARS
+export OS_TYPE="$(uname -s)"
+export ARCH_TYPE="$(uname -m)"
+export PATH="$HOME/.local/bin:$PATH"
+export ZSHRC_PATH="$HOME/.zshrc"
+export RECENT_TIME="$(date +%Y-%m-%d-%H-%M-%S)"
+
+# GLOBAL ALIASES
+source $GINZSH_PATH/global-aliases.zshrc
+
+# LOCAL ALIASES : MAC
+source $GINZSH_PATH/local-aliases.zshrc
+
+# ZSHRC STUFFS
+source $GINZSH_PATH/zshrc.zshrc
+
+# GIT
+source $GINZSH_PATH/git.zshrc
+
+# BREW
+source $GINZSH_PATH/brew.zshrc
+
+# BUN SETUP
+source $GINZSH_PATH/bun.zshrc
+
+# MPV
+alias m='mpv --no-video --loop-playlist=inf'
+
+# CARGO
+source $GINZSH_PATH/cargo.zshrc
+
+# WEB CURL
+source $GINZSH_PATH/web.zshrc
+
+# DU & CLEANUP
+source $GINZSH_PATH/cleanup.zshrc
+
+# BTOP
+source $GINZSH_PATH/btop.zshrc
+
+# CONDA
+source $GINZSH_PATH/conda.zshrc
+
+# Ollama AI
+source $GINZSH_PATH/ollama.zshrc
+
+# LOGX
+alias logx='python ~/Desktop/NF/LOGTOOL/main.py'
+alias oplogx='code ~/Desktop/NF/LOGTOOL'
+
+# GHOSTTY
+source $GINZSH_PATH/ghostty.zshrc
+
+# FZF
+eval "$(/opt/homebrew/bin/fzf --zsh)"
+
+# LICH
+source $GINZSH_PATH/lich.zshrc
+
+# BLUETOOTH
+source $GINZSH_PATH/bluetooth.zshrc
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

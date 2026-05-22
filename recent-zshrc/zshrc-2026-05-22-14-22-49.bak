@@ -1,8 +1,90 @@
+# gin signature : gin.w.xvi.e.s
 
+# ZSH
+source "$GINZSH_PATH/zsh.zshrc"
 
-# ------------------------------------------------------------------------------
-# 9. LỊCH & DASHBOARD (BY GIN CLAVEND)
-# ------------------------------------------------------------------------------
+# AUTH
+export GIN_SIGNATURE="gin-w-xvi-e-s"
+echo "This is $GIN_SIGNATURE"
+
+# LOCAL VARS
+export MAIN_PATH="$HOME/GINETSOPHIE"
+export GITGINXVI_PATH="$MAIN_PATH/git-ginxvi"
+export GINZSH_PATH="$GITGINXVI_PATH/ginzsh"
+export CONFIG_PATH="$HOME/.config"
+# LOCAL CDS
+alias main="cd $MAIN_PATH"
+alias gingit="cd $GITGINXVI_PATH"
+alias ginzsh="cd $GINZSH_PATH"
+alias cf="cd $CONFIG_PATH"
+
+# GLOBAL VARS
+export OS_TYPE="$(uname -s)"
+export ARCH_TYPE="$(uname -m)"
+export PATH="$HOME/.local/bin:$PATH"
+export ZSHRC_PATH="$HOME/.zshrc"
+export RECENT_TIME="$(date +%Y-%m-%d-%H-%M-%S)"
+
+# GLOBAL ALIASES
+source $GINZSH_PATH/global-aliases.zshrc
+
+# LOCAL ALIASES : MAC
+source $GINZSH_PATH/local-aliases.zshrc
+
+# ZSHRC STUFFS
+source $GINZSH_PATH/zshrc.zshrc
+
+# GIT
+source $GINZSH_PATH/git.zshrc
+
+# BREW
+source $GINZSH_PATH/brew.zshrc
+
+# BUN SETUP
+source $GINZSH_PATH/bun.zshrc
+
+# MPV
+alias m='mpv --no-video --loop-playlist=inf'
+
+# WEB CURL
+alias gpt='open https://chatgpt.com/'
+alias gem='open https://gemini.google.com/app'
+
+# DU & CLEANUP
+alias ducli='du -sh /opt/homebrew/Cellar/* 2>/dev/null | sort -hr | head -50'
+alias ducask='du -sh /opt/homebrew/Caskroom/* 2>/dev/null | sort -hr | head -50'
+alias duapp='du -sh /Applications/* 2>/dev/null | sort -hr | head -50'
+alias cleantrash='[ -n "$(ls -A ~/.Trash 2>/dev/null)" ] && sudo rm -rf /Volumes/Macintosh\ HD/.Trashes/$(id -u)/* && echo "🧹 Cleaned" || echo "✅ No trash anymore"'
+
+# BTOP
+alias b1='btop -u 100'
+alias b2='btop -u 100'
+alias b3='btop -u 300'
+
+# CONDA
+alias concu='conda update conda'
+alias conua='conda update --all'
+alias condf='conda deactivate && conda activate Con-Default-14'
+
+# Ollama AI
+alias ol='ollama'
+alias ols='ollama list'
+alias olp='ollama pull'
+alias olru='ollama run'
+alias olrm='ollama rm'
+
+# LOGX
+alias logx='python ~/Desktop/NF/LOGTOOL/main.py'
+alias oplogx='code ~/Desktop/NF/LOGTOOL'
+
+# GHOSTTY
+alias gttyr='osascript -e '\''tell application "Ghostty" to activate'\'' && osascript -e '\''tell application "System Events" to keystroke "," using {command down, shift down}'\'''
+
+# FZF
+eval "$(/opt/homebrew/bin/fzf --zsh)"
+eval "$(/opt/homebrew/bin/fzf --zsh)"
+
+# LICH
 function showlich() {
     RED="\033[31m"; GREEN="\033[32m"; CYAN="\033[36m"; YELLOW="\033[33m"; RESET="\033[0m"
     TODAY=$(date +%d); MONTH=${1:-$(date +%m)}; YEAR=${2:-$(date +%Y)}
@@ -43,9 +125,6 @@ function dashboard() {
     while true; do clear; lich; sleep 60; done
 }
 
-# ------------------------------------------------------------------------------
-# 10. KỊCH BẢN CHỨC NĂNG LỚN (WI-FI & CHEAT SHEET)
-# ------------------------------------------------------------------------------
 function ginwf() {
     local interface=$(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}')
     [[ -z "$interface" ]] && interface="en0"
@@ -450,10 +529,3 @@ function cpnix() {
     cp ~/GINETSOPHIE/NIXOS/.zshrc ~/NIXOS-GRAPHIC-shared/.zshrc;
     cp ~/GINETSOPHIE/NIXOS/configuration.nix ~/NIXOS-GRAPHIC-shared/configuration.nix;
 }
-
-
-
-# fzf
-eval "$(/opt/homebrew/bin/fzf --zsh)"
-export FZF_COMPLETION_TRIGGER='`'
-source /Users/gc-thaitoan/.config/broot/launcher/bash/br
