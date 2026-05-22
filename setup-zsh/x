@@ -1,0 +1,14 @@
+brew install zsh
+which -a zsh
+echo /opt/homebrew/bin/zsh | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/bin/zsh
+exec zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+brew install powerlevel10k
+
+nano .zshrc
+    source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
