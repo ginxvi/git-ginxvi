@@ -1,7 +1,7 @@
 # gin signature : gin.w.xvi.e.s
 
 # ZSH
-source "$GINZSH_PATH/zsh"
+source "$GINZSH_PATH/zsh.zshrc"
 
 # AUTH
 export GIN_SIGNATURE="gin-w-xvi-e-s"
@@ -23,6 +23,7 @@ alias s="source"
 alias c="clear"
 alias e="exit"
 alias r="rm -rf"
+alias p="pwd"
 
 alias sr="sudo rm -rf"
 alias la="ls -alh"
