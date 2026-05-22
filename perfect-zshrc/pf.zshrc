@@ -50,7 +50,7 @@ alias iz="cp $ZSHRC_PATH $GITGINXVI_PATH/recent-zshrc/zshrc-${RECENT_TIME}.bak"
 alias ez="cp $GITGINXVI_PATH/perfect-zshrc/pf.zshrc $HOME/.zshrc && source $HOME/.zshrc"
 
 # GIT
-alias gacp='git add . && git commit -m "$GIN_SIGNATURE" && git push'
+source $GINZSH_PATH/git.zshrc
 
 # BREW
 alias buuc='brew update && brew upgrade && brew cleanup'
