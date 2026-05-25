@@ -15,4 +15,36 @@ alias bn='bat note'
 alias en='echo "$1" >> note'
 
 alias own="echo 'sudo chown $(whoami):$(id -gn)' && sudo chown $(whoami):$(id -gn)"
-alias ownall="echo 'sudo chown -R $(whoami):$(id -gn)' && sudo chown -R $(whoami):$(id -gn)"
+alias ownall="echo 'sudo chown -R $(whoami):$(id -gn)' && sudo chown -R $(whoami):$(id -gn)" 
+
+lal() {
+  defaults read com.apple.HIToolbox AppleEnabledInputSources 2>/dev/null |
+  grep -E 'KeyboardLayout Name|Input Mode' |
+  sed -E '
+    s/.*"KeyboardLayout Name" = "([^"]+)".*/EN  : \1/;
+    s/.*"Input Mode" = ".*Telex".*/VI  : Telex/;
+    s/.*"Input Mode" = ".*VNI".*/VI  : VNI/;
+  ' |
+  sort -u
+}
+
+VNI() {
+  osascript -e '
+  tell application "System Events"
+    key code 102 using {control down, option down, command down}
+  end tell'
+}
+
+TELEX() {
+  osascript -e '
+  tell application "System Events"
+    key code 104 using {control down, option down, command down}
+  end tell'
+}
+
+ENG() {
+  osascript -e '
+  tell application "System Events"
+    key code 49 using {control down}
+  end tell'
+}

@@ -31,7 +31,7 @@ zsh-autosuggestions:
 zsh-syntax-highlighting
 gtop
 htop
-
+im-select (brew install daipeihust/tap/im-select)
 
 ghostty
 obsidian
