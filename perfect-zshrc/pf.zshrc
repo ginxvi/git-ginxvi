@@ -78,7 +78,7 @@ source "$GINZSH_PATH/ollama.zshrc"
 source "$GINZSH_PATH/bluetooth.zshrc"
 source "$GINZSH_PATH/ghostty.zshrc"
 source "$GINZSH_PATH/lich.zshrc"
-
+source "$GINZSH_PATH/im-select.zshrc"
 # =========================================================
 # FZF
 # =========================================================
