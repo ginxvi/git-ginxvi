@@ -1,13 +1,13 @@
-alias s="source"
-alias c="clear"
-alias e="exit"
-alias r="rm -rf"
-alias p="pwd"
-alias b='echo && bat'
+alias s="echo 'source' && source"
+alias c="echo 'clear' && clear"
+alias e="echo 'exit' && exit"
+alias r="echo 'rm -rf' && rm -rf"
+alias p="echo 'pwd' && pwd"
+alias b='bat --color=always --style=plain --line-range=:500 -p'
 
-alias sr="sudo rm -rf"
-alias la="ls -alh"
-alias ea="eza -alh"
+alias sr="echo 'sudo rm -rf' && sudo rm -rf"
+alias la="echo 'ls -alh' && ls -alh"
+alias ea="echo 'eza -alh' && eza -alh"
 
-alias own="sudo chown $(whoami):$(id -gn)"
-alias ownall="sudo chown -R $(whoami):$(id -gn)"
+alias own="echo 'sudo chown $(whoami):$(id -gn)' && sudo chown $(whoami):$(id -gn)"
+alias ownall="echo 'sudo chown -R $(whoami):$(id -gn)' && sudo chown -R $(whoami):$(id -gn)"

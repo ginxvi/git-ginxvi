@@ -1,3 +1,5 @@
+ssh
+
 zsh, oh my zsh, p10k
 tree
 btop
@@ -8,6 +10,7 @@ git
 curl
 fzf
 nala
+vim
 neovim
 gh
 lazygit
@@ -18,6 +21,7 @@ build-essential
 pkg-config
 libssl-dev
 fastfetch
+neofetch
 clang
 libclang-dev
 llvm
@@ -25,6 +29,30 @@ libopencv-dev
 cmake
 zsh-autosuggestions:
 zsh-syntax-highlighting
+gtop
+htop
+
+
+ghostty
+obsidian
+
+cbonsai
+asciiquarium
+cowsay
+
+direnv
+dmidecode
+libei
+librewolf
+mesa-demos
+pciutils
+sl
+vscodium
+wl-clipboard
+xclip
+xsel
+
+
 
 RUST
 rustup: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

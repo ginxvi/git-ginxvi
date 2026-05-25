@@ -52,6 +52,7 @@ alias oplogx='code ~/Desktop/NF/LOGTOOL'
 
 # global aliases
 source "$GINZSH_PATH/global-aliases.zshrc"
+source "$GINZSH_PATH/global-functions.zshrc"
 
 # local aliases
 source "$GINZSH_PATH/local-aliases.zshrc"
