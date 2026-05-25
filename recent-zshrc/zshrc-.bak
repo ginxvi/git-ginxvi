@@ -52,6 +52,7 @@ alias oplogx='code ~/Desktop/NF/LOGTOOL'
 
 # global aliases
 source "$GINZSH_PATH/global-aliases.zshrc"
+source "$GINZSH_PATH/global-functions.zshrc"
 
 # local aliases
 source "$GINZSH_PATH/local-aliases.zshrc"
@@ -93,8 +94,5 @@ source "$GINZSH_PATH/zshrc.zshrc"
 # =========================================================
 # POWERLEVEL10K
 # =========================================================
-
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
