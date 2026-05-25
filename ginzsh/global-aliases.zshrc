@@ -4,6 +4,7 @@ alias e="echo 'exit' && exit"
 alias r="echo 'rm -rf' && rm -rf"
 alias p="echo 'pwd' && pwd"
 alias b='bat --color=always --style=plain --line-range=:500 -p'
+alias l="echo 'ls -ac' && ls -ac"
 
 alias sr="echo 'sudo rm -rf' && sudo rm -rf"
 alias la="echo 'ls -alh' && ls -alh"
