@@ -34,6 +34,9 @@ export ZSHRC_PATH="$HOME/.zshrc"
 export GIN_SIGNATURE="gin-w-xvi-e-s"
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LIBCLANG_PATH="/opt/homebrew/opt/llvm/lib"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/opencv/lib/pkgconfig"
 
 # =========================================================
 # ALIASES
