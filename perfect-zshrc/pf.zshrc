@@ -32,12 +32,6 @@ setopt globdots
 setopt extended_glob
 
 setopt interactive_comments
-unsetopt prompt_sp
-stty stop undef
-
-HISTSIZE=1000000
-SAVEHIST=1000000
-HISTCONTROL=ignoreboth
 
 bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
