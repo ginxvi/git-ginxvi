@@ -30,7 +30,6 @@ setopt auto_param_slash
 setopt no_case_glob no_case_match
 setopt globdots
 setopt extended_glob
-
 setopt interactive_comments
 
 bindkey "^a" beginning-of-line
@@ -105,6 +104,7 @@ source "$GINZSH_PATH/bluetooth.zshrc"
 source "$GINZSH_PATH/ghostty.zshrc"
 source "$GINZSH_PATH/lich.zshrc"
 source "$GINZSH_PATH/im-select.zshrc"
+source "$GINZSH_PATH/temps.zshrc"
 # =========================================================
 # FZF
 # =========================================================
