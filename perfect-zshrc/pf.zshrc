@@ -23,7 +23,7 @@ autoload -U colors && colors
 zstyle ':completion:*' menu select
 zstyle ':completion:*' special-dirs true
 
-setopt append_history inc_append_history share_history
+# setopt append_history inc_append_history share_history
 setopt autocd
 setopt auto_param_slash
 
